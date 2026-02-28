@@ -1,6 +1,7 @@
 # Cortex ARM Dev Container Workspace
 
 This repo is the shared workspace/devcontainer host for multiple C/C++ projects.
+Project source repos should stay separate and live next to this repo, not inside it.
 
 ## Recommended layout
 
