@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "infra",
+			"path": "."
+		},
+		{
+			"name": "cortexm-hello",
+			"path": "cortexm-hello"
+		},
+		{
+			"name": "sibling-repos",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
