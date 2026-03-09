@@ -1,15 +1,21 @@
 {
   "name": "clang-arm-cortex-dev",
-  "image": "martinescad/clang_arm_cortex:latest",
+  "image": "martinescad/clang-arm-cortex:latest",
   "remoteUser": "vscode",
   "workspaceMount": "source=${localWorkspaceFolder}/..,target=/workspace,type=bind,consistency=cached",
   "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
+  "runArgs": [
+    "--privileged",
+    "-v",
+    "/dev:/dev"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-vscode.cpptools",
         "ms-vscode.cmake-tools",
-        "llvm-vs-code-extensions.vscode-clangd"
+        "llvm-vs-code-extensions.vscode-clangd",
+        "ms-vscode.vscode-serial-monitor"
       ],
       "settings": {
         "cmake.generator": "Ninja",
