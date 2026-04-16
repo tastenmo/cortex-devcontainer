@@ -1,6 +1,9 @@
 {
   "name": "clang-arm-cortex-dev",
-  "image": "martinescad/clang-arm-cortex:latest",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
   "remoteUser": "vscode",
   "workspaceMount": "source=${localWorkspaceFolder}/..,target=/workspace,type=bind,consistency=cached",
   "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
@@ -15,7 +18,9 @@
         "ms-vscode.cpptools",
         "ms-vscode.cmake-tools",
         "llvm-vs-code-extensions.vscode-clangd",
-        "ms-vscode.vscode-serial-monitor"
+        "ms-vscode.vscode-serial-monitor",
+        "GitHub.copilot-chat",
+        "marus25.cortex-debug"
       ],
       "settings": {
         "cmake.generator": "Ninja",
@@ -24,3 +29,6 @@
     }
   }
 }
+
+
+

@@ -11,6 +11,9 @@
 		{
 			"name": "blackmagic",
 			"path": "../blackmagic"
+		},
+		{
+			"path": "../XMCpp"
 		}
 	],
 	"settings": {}
